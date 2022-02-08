@@ -1,0 +1,153 @@
+/*
+body {
+ font: 0.8em/1.6 Arial, Helvetica, sans-serif;
+ background-color: #FFF;
+}
+*/
+
+/*
+ This CSS file controls the entire appearance of the photo gallery.
+ Most of the photo controls below are hidden by default, until their 'active'
+ style is applied by the script. This is for older/non-JS-supporting browsers.
+*/
+
+
+
+/*
+ Prev/Next Arrow styles: I'm giving them a button appearance,
+ and pushing them to the sides of the page with CSS floats.
+*/
+
+.photoArrow {
+ display: none;
+ width: 5em;
+ padding: 0.1em;
+ text-align: center;
+ color: white;
+ background-color: #5080B0;
+ border: 1px solid #5080B0;
+ border-color: #A0E0FF #205080 #205080 #A0E0FF;
+ cursor: pointer;
+}
+.photoPrevActive {
+ display: none;
+ float: left;
+}
+.photoNextActive {
+ display: none;
+ float: right;
+}
+
+
+/*
+ The list is shrunk down, with only the active item displayed.
+ A cool alternative to this is to display the list with "overflow: auto" to
+ the side of your photos, as the script allows you to click items to jump to them!
+ You could have a list of thumbnails, linking to the full-size images, and use
+ photoItemActive to put a border/background around the active image...
+*/
+
+.photoListActive {
+ margin: 0 0 1em 0;
+ padding: 0em 6em;
+ text-align: center;
+ list-style: none;
+}
+.photoListActive li {
+ margin: 0;
+ padding: 0;
+ color: #567;
+ display: none;
+}
+.photoListActive li.photoItemActive {
+ display: block;
+}
+.photoListActive a {
+ color: #34C;
+}
+
+
+/* It's a good idea to wrap your photos in an area the size of the largest photo */
+
+.photoContainer {
+ height: 240px;
+ padding-top: 30px;
+}
+
+
+/* OK, the photo area itself. Nothing too special here, a border and some padding. */
+
+.photoArea {
+ position: relative;
+ visibility: hidden;
+ margin: 0 auto 0 auto;
+}
+.photoAreaActive {
+ visibility: visible;
+ /*border: 1px solid rgb(183, 183, 183);*/
+ padding: 0;
+}
+
+
+/*
+ The AutoPlay setup is complicated; the two styled spans are alternately hidden and
+ shown depending on the script state. I also have a small loading message that is
+ shown to the right.
+*/
+
+.photoAutoDisabled {
+ display: none;
+}
+.photoAutoPlay, .photoAutoPause {
+ display: none;
+ width: 5em;
+ padding: 0.1em;
+ text-align: center;
+ color: white;
+ background-color: #5080B0;
+ border: 1px solid #5080B0;
+ border-color: #A0E0FF #205080 #205080 #A0E0FF;
+ cursor: pointer;
+}
+.photoAutoPlay span, .photoAutoPause span {
+ display: none;
+ width: 5em; /* IE/Mac fix */
+}
+.photoAutoPlay .photoAutoPlayLabel {
+ display: block;
+}
+.photoAutoPause .photoAutoPauseLabel {
+ display: block;
+}
+
+.photoLoadMessage {
+ float: right;
+ visibility: hidden;
+ font-style: italic;
+ text-align: center;
+}
+
+.table{
+    border-collapse: collapse;
+}
+.redColor{color: red;}
+.table td, .table th{
+    border:1px solid #bbb;
+    padding:5px 20px;
+    text-align: left;
+}
+.table th{
+    text-align: center;
+}
+.tabs{
+    padding-left: 10px;
+    background-color: #fff;
+}
+.tabs li{ 
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    background: #ddd;
+}

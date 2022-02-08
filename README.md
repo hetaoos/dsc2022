@@ -4,5 +4,6 @@ git命令
 
 ```bash
 git pull https://github.com/hetaoos/dsc2022.git
+git push https://github.com/hetaoos/dsc2022.git
 ```
 
