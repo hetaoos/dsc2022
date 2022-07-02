@@ -181,7 +181,7 @@
         <ul class="tabs">
           <li><a href="#talk4">Xiaosong Zhang</a></li>
           <li><a href="#talk3">Guoyin Wang</a></li>
-          <li><a href="#talk2">Xingquan (Hill) Zhu</a></li>
+          <li><a href="#talk2">Xingquan Zhu</a></li>
           <li><a href="#talk1">Toshiyuki Amagasa</a></li>
         </ul>
         <div style="padding-right: 20px; margin-bottom: 20px;" class="dotted" id="talk4">
@@ -234,28 +234,29 @@
         </div>
         <div style="padding-right: 20px; margin-bottom: 20px;" class="dotted" id="talk2">
           <div style="width: 50%; display: inline-block;">
-            <p><b>Title</b>:<br>
+            <p><b>Title</b>:Tackling Unknown Future: Open-World Domain Adaptive Graph Learning<br>
             </p>
             <p>
               <b>Speaker</b>:
-               Xingquan (Hill) Zhu, Florida Atlantic University, USA
+               Xingquan Zhu, Florida Atlantic University, USA
             </p>
           </div>
           <div style="float: right; margin-right: 20%; border: 1px solid #ddd;">
             <img style="width: 110px; height: 130px;" src="./image/person/Xingquan (Hill) Zhu.png" alt="">
           </div>
           <h4>Abstract</h4>
-          <!-- <p>
-            Mobile Crowd Sensing (MCS), as a new sensing paradigm that harnesses the power of the crowd, has become a promising research field in recent years. Numerous studies have been done on the research challenges such as optimized worker selection, incentive mechanisms, efficient data transmission, crowd data quality/trust, novel MCS applications, and so on. In this talk, we will discuss about the recent development and future directions of MCS. In particular, we will talk about Crowd Computing, the aggregation and fusion of heterogeneous crowd-contributed data for comprehensive urban sensing. We will report the recent progress of our group towards this promising research area.
-          </p> -->
+          <p>
+            Networks/Graphs are convenient tools to model interactions and interdependencies between large-scale data. Graph data analytics, such as node classification which attempts to categorize nodes of graphs into different groups, are often carried out in a closed-world setting where labeled classes (and their training samples) are known, and the learning goal is to correctly classify unlabeled nodes into classes already known. In reality, new trends emerge constantly, and a model unaware of unknown future can hardly work well in real-world applications. 
+            In this talk, we address two fundamental problems in graph learning, open-world graph learning and unsupervised domain adaptive graph learning, in a setting that the learning is to predict test samples whose class label space is only partially known or completely unknown. For open-world graph learning, we propose a new open-world graph learning paradigm, where the learning goal is to not only classify nodes belonging to seen classes into correct groups, but also classify nodes not belonging to existing classes to an unseen class. To tackle unknown label space in a cross-domain learning setting, we propose an unsupervised domain adaptive graph convolutional network, where all nodes in a target domain are unlabeled. Domain adaptation aims to transfer knowledge from the graph of an existing domain with labeled nodes to classify nodes in the target domain.              
+          </p>
           <h4>Short Bio:</h4>
-          <!-- <p>
-            Dr. Bin Guo is a professor with Northwestern Polytechnical University, China. He received his Ph.D. degree in computer science from Keio University, Tokyo, Japan, in 2009. His current research interests include Ubiquitous Computing, Mobile Crowd Sensing, and Urban Computing. He has published over 100 papers in refereed journals and conference proceedings such as IEEE Comm. Surveys and Tutorials, ACM Computing Surveys, IEEE TMC, IEEE THMS, UbiComp, PerCom, etc. He has served as an associate editor of IEEE Communications Magazine, IEEE Trans. on Human-Machine-Systems, ACM IMWUT, and so on. He is the program chair of IEEE CPSCom’16 and UIC’13, the general co-chair of UIC’15 (CCF-ranked conference) and IEEE IoP’17. He is a senior member of IEEE and CCF. He received the support of the National Science Fund for Distinguished Young Scholars in 2020, and the support from the National Youth Talent Support Program (Ten Thousand People Plan) in 2016.
-          </p> -->
+          <p>
+            Xingquan Zhu has received the Ph.D degree in Computer Science from Fudan University, Shanghai, China. He is currently a Full Professor of Computer Science. His research interests include data mining, machine learning, and bioinformatics. Since 2000, he has published more than 280 refereed journal and conference papers in these areas, including four Best Paper Awards (PAKDD-21, IRI-18, PAKDD-13, ICTAI-05) and three Best Student Paper Awards (ICDM-20, ICKG-20, ICPR-12). He is the Program Committee Co-Chair for the 22nd IEEE International Conference on Data Mining (ICDM-2022), General Co-chair for the 2021 IEEE International Conference on Big Data (IEEE BigData-2021), and Program Committee Co-Chair for the 33rd International Conference on Scientific and Statistical Database Management (SSDBM-2021). He previously served as an associate editor of the IEEE Trans. on Knowledge and Data Engineering (2008-2012, 2014-2021), and currently serves as an associate editor of the ACM Trans. on Knowledge Discovery from Data (2017 - date), International Journal of Social Network Analysis and Mining SNAM (2010-date), Journal of Big Data (2013-date), and Network Modeling Analysis in Health Informatics and Bioinformatics Journal (2014-date).  
+          </p>
         </div>
         <div style="padding-right: 20px; margin-bottom: 20px;" class="dotted" id="talk1">
           <div style="width: 50%; display: inline-block;">
-            <p><b>Title</b>:<br>
+            <p><b>Title</b>: Real-world stream data analysis: challenges and opportunities<br>
               
             </p>
             <p>
@@ -267,13 +268,14 @@
             <img style="width: 110px; height: 130px;" src="./image/person/Toshiyuki Amagasa.png" alt="">
           </div>
           <h4>Abstract</h4>
-          <!-- <p>
+          <p>Recent advances in ICT technologies, including IoT and big data analysis, have made it possible for governments, companies, and individuals to process a large amount of data in real-time, allowing one to extract valuable insights from massive streaming data. These outcomes can be used to improve our society and human wellbeing. In this talk, we will introduce some of our research projects of real-time sensor data analysis for posture recognition and social big data analysis. We will also mention challenges and opportunities in
+            real-time stream data analysis.
             Conventional sketching methods on counting stream item frequencies use hash functions for mapping data items to a concise structure, e.g., a two-dimensional array, at the expense of overcounting due to hashing collisions. Despite the popularity, however, the accumulated errors originated in hashing collisions deteriorate the sketching accuracies at the rapid pace of data increasing, which poses a great challenge to sketch big data streams at web scale. In this paper, we propose a novel structure, called XY-sketch, which estimates the frequency of a data item by estimating the probability of this item appearing in the data stream. The framework associated with XY-sketch consists of two phases, namely decomposition and recomposition phases. A data item is split into a set of compactly stored basic elements, which can be stringed up in a probabilistic manner for query evaluation during the recomposition phase. Throughout, we conduct optimization under space constraints and detailed theoretical analysis. Experiments on both real and synthetic datasets are done to show the superior scalability on sketching large-scale streams. Remarkably, XY-sketch is orders of magnitudes more accurate than existing solutions, when the space budget is small.
-          </p> -->
+          </p>
           <h4>Short Bio:</h4>
-          <!-- <p>
-            Xike Xie is currently a research professor in the School of Computer Science and Technology, University of Science and Technology of China. Prior to that, he was an assistant professor in Aalborg University, Denmark. His research interests include big data management, graph computing, mobile computing, and spatiotemporal databases.
-          </p> -->
+          <p>
+            Toshiyuki Amagasa received B.E., M.E., and Ph.D from the Department of Computer Science, Gunma University in 1994, 1996, and 1999, respectively. He is currently a full professor of Computer Science. His research interests cover database systems, data mining, and database application in scientific domains. He is a senior member of IPSJ, IEICE, and IEEE, a board member of DBSJ, and a member of ACM.
+          </p>
         </div>
       </div>
 
